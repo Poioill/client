@@ -10,7 +10,7 @@ export class NotificationService {
   }
 
   public showSnackBar(message: string): void {
-    this.snackbar.open(message, null, {
+    this.snackbar.open(message, "", {
       duration: 2000
     });
   }
