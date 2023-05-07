@@ -14,23 +14,23 @@ export class PostService {
   constructor(private http: HttpClient) {
   }
 
-  createPost(post: Post): Observable<any> {
+  public createPost(post: Post): Observable<any> {
     return this.http.post(POST_API + 'create', post);
   }
 
-  getAllPosts():  Observable<any>{
+  public getAllPosts():  Observable<any>{
     return this.http.get(POST_API + "all");
   }
 
-  getPostForCurrentUser(): Observable<any>{
+  public getPostForCurrentUser(): Observable<any>{
     return this.http.get(POST_API + 'user/posts');
   }
 
-  deletePost(id: number): Observable<any>{
+  public deletePost(id: number): Observable<any>{
     return this.http.post(POST_API + id + '/delete', null);
   }
 
-  likePost(id: number, username: string): Observable<any>{
+  public likePost(id: number, username: string): Observable<any>{
     return this.http.post(POST_API + id + '/' + username + '/like', null);
   }
 }

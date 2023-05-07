@@ -13,25 +13,25 @@ export class ImageUploadService {
   constructor(private http: HttpClient) {
   }
 
-  uploadImageToUser(file: File): Observable<any>{
+  public uploadImageToUser(file: File): Observable<any>{
     const uploadData = new FormData();
     uploadData.append('file', file);
 
     return this.http.post(IMAGE_API + 'upload', uploadData);
   }
 
-  uploadImageToPost(file: File, postId: number): Observable<any>{
+  public uploadImageToPost(file: File, postId: number): Observable<any>{
     const uploadData = new FormData();
     uploadData.append('file', file);
 
     return this.http.post(IMAGE_API + postId + '/upload', uploadData);
   }
 
-  getProfileImage(): Observable<any>{
+  public getProfileImage(): Observable<any>{
     return this.http.get(IMAGE_API + 'profileImage');
   }
 
-  getImagetoPost(postId: number): Observable<any>{
+  public getImagetoPost(postId: number): Observable<any>{
     return this.http.get(IMAGE_API + postId + '/image');
   }
 }

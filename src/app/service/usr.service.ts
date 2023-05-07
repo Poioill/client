@@ -12,15 +12,15 @@ export class UsrService {
   constructor(private http: HttpClient) {
   }
 
-  getUserById(id: number): Observable<any> {
+  public getUserById(id: number): Observable<any> {
     return this.http.get(USR_API + id);
   }
 
-  getCurrentUser(): Observable<any> {
+  public getCurrentUser(): Observable<any> {
     return this.http.get(USR_API);
   }
 
-  updateUser(usr: any): Observable<any> {
+  public updateUser(usr: any): Observable<any> {
     return this.http.post(USR_API + 'update', usr);
   }
 }
