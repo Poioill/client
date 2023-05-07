@@ -17,6 +17,7 @@ export class TokenStorageService {
   }
 
   public getToken(): string {
+    // @ts-ignore
     return sessionStorage.getItem(TOKEN_KEY);
   }
 
@@ -26,6 +27,7 @@ export class TokenStorageService {
   }
 
   public getUser(): any {
+    // @ts-ignore
     return JSON.parse(sessionStorage.getItem(USER_KEY));
   }
 
