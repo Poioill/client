@@ -8,6 +8,7 @@ import {MaterialModule} from "./material-module";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {authInterseptorProviders} from './helper/auth-interceptor.service';
+import {authErrorInterceptorProvider} from "./helper/error-interceptor.service";
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import {authInterseptorProviders} from './helper/auth-interceptor.service';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [authInterseptorProviders],
+  providers: [authInterseptorProviders, authErrorInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
