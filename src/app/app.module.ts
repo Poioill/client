@@ -7,8 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from "./material-module";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {authInterseptorProviders} from './helper/auth-interceptor.service';
-import {authErrorInterceptorProvider} from "./helper/error-interceptor.service";
+import {authInterceptorProviders, AuthInterceptorService} from './helper/auth-interceptor.service';
+import {authErrorInterceptorProvider, ErrorInterceptorService} from "./helper/error-interceptor.service";
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 
@@ -28,7 +28,14 @@ import { RegisterComponent } from './auth/register/register.component';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [authInterseptorProviders, authErrorInterceptorProvider],
+  providers: [
+    {provide: authInterceptorProviders,
+      useClass: AuthInterceptorService,
+      multi: true},
+    { provide: authErrorInterceptorProvider,
+      useClass: ErrorInterceptorService,
+      multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -22,7 +22,7 @@ export class AuthInterceptorService implements HttpInterceptor {
     return next.handle(authRequest)
   }
 }
-export const authInterseptorProviders = [
+export const authInterceptorProviders = [
   {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}
 ]
 

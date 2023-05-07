@@ -11,7 +11,7 @@ import {Observable, throwError} from "rxjs";
 export class ErrorInterceptorService implements HttpInterceptor {
 
   constructor(private tokenService: TokenStorageService,
-              private notoficationService: NotificationService) {
+              private notificationService: NotificationService) {
   }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
@@ -20,9 +20,8 @@ export class ErrorInterceptorService implements HttpInterceptor {
         this.tokenService.logOut();
         window.location.reload();
       }
-
       const  error = err.error.message || err.statusText;
-      this.notoficationService.showSnackBar(error);
+      this.notificationService.showSnackBar(error);
       return throwError(error);
     }));
   }

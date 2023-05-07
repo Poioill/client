@@ -31,7 +31,7 @@ export class ImageUploadService {
     return this.http.get(IMAGE_API + 'profileImage');
   }
 
-  public getImagetoPost(postId: number): Observable<any>{
+  public getImageToPost(postId: number): Observable<any>{
     return this.http.get(IMAGE_API + postId + '/image');
   }
 }
