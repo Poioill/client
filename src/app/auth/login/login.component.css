@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body {
+  background: #2b2e6c;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+.form {
+  background: #272961;
+}
+.form-logo img {
+  width: 30%;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Be Vietnam";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 44px;
+  color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: start;
+}
+a {
+  text-decoration: none;
+  font-family: "Be Vietnam";
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.title a:nth-child(2) {
+  border-bottom: 1px solid #e5786c;
+}
+.title {
+  width: 50%;
+  margin: 0 auto;
+}
+
+input {
+  margin-top: 30px;
+  width: 322px;
+  height: 58px;
+  left: 306px;
+  top: 373px;
+  background: #47568a;
+  border-left: 4px solid #e38f41;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.btn {
+  width: 355px;
+  margin: 0 auto;
+  justify-self: start;
+}
+button {
+  width: 114px;
+  height: 43px;
+  background: #eb8870;
+  box-shadow: 0px 0px 17px 6px rgba(233, 194, 135, 0.25);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  border: none;
+}

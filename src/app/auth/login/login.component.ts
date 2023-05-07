@@ -11,6 +11,7 @@ import {NotificationService} from "../../service/notification.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
   public loginForm!: FormGroup;
 
   constructor(private authService: AuthService,
@@ -30,8 +31,8 @@ export class LoginComponent implements OnInit {
 
   private createLoginForm(): FormGroup {
     return this.fb.group({
-      username: ['', Validators.compose([Validators.required])],
-      password: ['', Validators.compose([Validators.required])],
+      username: ['u', Validators.compose([Validators.required])],
+      password: ['p', Validators.compose([Validators.required])],
     });
   }
 
