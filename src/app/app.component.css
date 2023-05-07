@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;600&family=Oswald&display=swap");
+
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  background: #fafafa;
+  font-size: 14px;
+  color: #252b42;
+  font-weight: 500;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+/* ---------------------------------------------------------------------------- */
+a {
+  font-style: normal;
+  font-weight: 200 !important;
+  font-size: 16px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+p {
+  width: 80%;
+  font-style: normal;
+  font-weight: 200 !important;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  margin: 20px 0;
+}
+h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 200 !important;
+  font-size: 70px;
+  line-height: 90px;
+  color: #ffffff;
+}
+h5 {
+  font-style: normal;
+  font-weight: 200 !important;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffb35f;
+  margin-bottom: 15px;
+}
+span {
+  font-style: normal;
+  font-weight: 200 !important;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+}
+h4 {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200 !important;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+}
+/* ---------------------------------------------------------------------------- */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}

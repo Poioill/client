@@ -1,12 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
 body {
   background: #2b2e6c;
 }
+
 
 .wrapper {
   width: 1000px;
